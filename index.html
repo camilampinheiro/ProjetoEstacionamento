@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Estacionamento automatizado</title>
+</head>
+<body>
+    <h1>Estacionamento</h1>
+    <div class="actions">
+        <button id="entrada-btn">Entrada de veículo</button>
+        <button id="saida-btn">Saída de veículo</button>
+    </div>
+
+    <div id="entrada-form" style="display: none;">
+        <h2>Entrada de veículo</h2>
+        <form>
+            <label for="placa">Placa do carro:</label>
+            <input type="text" id="placa" name="placa" placeholder="Ex: ABC1234">
+            <label for="hora-entrada">Hora de entrada:</label>
+            <input type="time" id="hora-entrada" name="hora-entrada">
+            <button type="button" id="submit-entrada">Entrar</button>
+        </form>
+    </div>
+
+    <div id="saida-form" style="display: none;">
+        <h2>Saída de veículo</h2>
+        <form>
+            <label for="placa-saida">Placa do carro:</label>
+            <input type="text" id="placa-saida" name="placa-saida" placeholder="Ex: ABC1234">
+            <label for="hora-saida">Hora de saída:</label>
+            <input type="time" id="hora-saida" name="hora-saida">
+            <button type="button" id="submit-saida">Sair</button>
+        </form>
+    </div>
+
+    <div id="messages"></div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
